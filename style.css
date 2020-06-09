@@ -8,7 +8,7 @@
 html {
 	color: #000;
 	font-family:'Fredoka One', cursive;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
 }
@@ -16,7 +16,7 @@ html {
 img {
     width: 200px;
     border-radius: 50%;
-    margin: 0 30px;
+    margin: 0;
     object-fit: cover;
     height: auto;
 }
@@ -141,6 +141,15 @@ footer {
 	border: 1px solid #4B96D7;
 }
 
+/* navbar */
+
+/* -----------Navbar---------------- */
+
+.active {
+    color: 
+}
+
+
 /* utils */
 
 .margin-small {
@@ -164,3 +173,9 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
