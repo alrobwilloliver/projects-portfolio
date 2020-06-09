@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+	color: #000;
+	font-family:'Fredoka One', cursive;
+	font-weight: 200;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 30px;
+    object-fit: cover;
+    height: auto;
+}
+
+h2 {
+	font-size: 150%;
+	word-spacing: 2px;
+	/* text-align: center; */
+	margin-bottom: 30px;
+    /* letter-spacing: 1px; */
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+h3 {
+	font-size: 100%;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+p {
+    margin: 20px auto;
+    font-size: 50%;
+    color: #FFF;
+}
+
+a {
+    color: white;
+}
+
+li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px;
+}
+
+li > a {
+    color: #000 !important;
+}
+
+ol {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: rgb(75, 150, 215);
+    height: 180px;
+    width: 100%;
+    padding: 50px;
+}
+
+.foot > p {
+    margin: 10px;
+}
+
+/* Structure */
+
+.row {
+    max-width: 1140px;
+	margin: 0 5%;
+}
+
+.foot {
+    /* margin-top: 100px; */
+    text-align: center;
+    /* display: inline-block; */
+}
+
+/* Reusable Components */
+
+.logo {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+}
+
+/* buttons */
+
+/* -----------Buttons---------------- */
+
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 20px;
+	transition: color 0.2s, background-color 0.2s, border 0.2s;
+	margin-top: 10px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+	background-color: #4B96D7;
+	border: 1px solid #4B96D7;
+	color: #fff;
+	margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+	color: #4B96D7;
+	border: 1px solid #4B96D7;
+	/*background-color: #fff;*/
+}
+
+.btn:active,
+.btn:hover {
+	background-color: #4B96D7;
+}
+
+.btn-ghost:active,
+.btn-ghost:hover {
+	color: #fff !important;
+	border: none;
+}
+
+.btn-full:active,
+.btn-full:hover {
+	border: 1px solid #4B96D7;
+}
+
+/* utils */
+
+.margin-small {
+    margin: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.block {
+    display: block;
+    height: 500px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
