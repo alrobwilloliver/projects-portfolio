@@ -50,7 +50,7 @@ a {
 li {
     display: inline-block;
     text-decoration: none;
-    margin: 20px;
+    margin: 10px;
 }
 
 li > a {
@@ -145,9 +145,9 @@ footer {
 
 /* -----------Navbar---------------- */
 
-.active {
+/* .active {
     color: 
-}
+} */
 
 
 /* utils */
@@ -179,3 +179,25 @@ footer {
     justify-content: center;
 }
 
+/* -----------Project Card---------------- */
+
+.project-gif {
+    border-radius: 0%;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    margin: 20px;
+}
+
+.project-list {
+    text-align: start;
+    margin: 50px;
+}
+
+.project-list > li {
+    display: list-item;
+}
+
+.project-buttons {
+    margin: 50px;
+}
