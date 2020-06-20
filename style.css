@@ -181,6 +181,10 @@ footer {
 
 /* -----------Project Card---------------- */
 
+.project-cards {
+    text-align: center;
+}
+
 .project-gif {
     border-radius: 0%;
     height: 100%;
@@ -190,12 +194,13 @@ footer {
 }
 
 .project-list {
-    text-align: start;
+    text-align: center;
     margin: 50px;
 }
 
 .project-list > li {
     display: list-item;
+    list-style: none;
 }
 
 .project-buttons {
