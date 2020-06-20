@@ -2,6 +2,15 @@ $(function () {
     if (Modernizr.history) {
         // if history is supported do this
 
+        var $mainContent = $("#main"),
+            $pageWrap = $("#page-wrap"),
+            baseHeight = 0,
+            $el;
+
+        //avoiding jumping when loading content
+        $pageWrap.height($pageWrap.height());
+        baseHeight = $pageWrap.height() - $pageWrap.height();
+
         // select nav element on click for a tag
         $("nav").delegate("a", "click", function () {
 
@@ -12,23 +21,16 @@ $(function () {
             history.pushState(null, null, _href);
 
             loadContent(_href);
-
+            return false;
         })
-
-        var $mainContent = $("#main"),
-            $pageWrap = $("#page-wrap"),
-            baseHeight = 0,
-            $el;
-
-        //avoiding jumping when loading content
-        $pageWrap.height($pageWrap.height());
-        baseHeight = $pageWrap.height() - $pageWrap.height();
 
         function loadContent(href) {
             $mainContent.find("#guts").fadeOut(200, function () {
                 $mainContent.hide().load(href + " #guts", function () {
-                    $pageWrap.animate({
-                        height: baseHeight + $mainContent.height() + "px"
+                    $mainContent.fadeIn(200, function () {
+                        $pageWrap.animate({
+                            height: baseHeight + $mainContent.height() + "px"
+                        })
                     })
 
                     $("nav a").removeClass("active");
@@ -40,11 +42,10 @@ $(function () {
         }
 
         $(window).bind("popstate", function () {
-            link = location.pathname.replace(/^.*[\\/]/, "");
-            loadContent(link);
+            _href = location.pathname.replace(/^.*[\\/]/, "");
+            loadContent(_href);
         });
 
-    } else {
-        // otherwise do this
-    }
+    } // otherwise history is not supported so do nothing fancy
+
 });
