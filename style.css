@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Rubik', sans-serif;
 }
 
 html {
@@ -24,9 +25,8 @@ img {
 h2 {
 	font-size: 150%;
 	word-spacing: 2px;
-	/* text-align: center; */
+	font-family: 'Rubik', sans-serif;
 	margin-bottom: 30px;
-    /* letter-spacing: 1px; */
     margin-top: 30px;
     margin-left: 30px;
 }
@@ -93,6 +93,10 @@ footer {
     margin: 0 auto;
     margin-top: 30px;
     display: block;
+}
+
+.page-content {
+    height: 100vh;
 }
 
 /* buttons */
@@ -189,6 +193,14 @@ footer {
     border-radius: 0%;
     height: 100%;
     width: 50%;
+    text-align: center;
+    margin: 20px;
+}
+
+.project-gif-small {
+    border-radius: 0%;
+    height: 50%;
+    width: 25%;
     text-align: center;
     margin: 20px;
 }
