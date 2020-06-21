@@ -137,7 +137,7 @@ footer {
 .btn-ghost:active,
 .btn-ghost:hover {
 	color: #fff !important;
-	border: none;
+	border: 1px solid #fff;
 }
 
 .btn-full:active,
