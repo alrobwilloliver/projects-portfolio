@@ -76,7 +76,6 @@ footer {
 /* Structure */
 
 .row {
-    max-width: 1140px;
 	margin: 0 5%;
 }
 
@@ -227,4 +226,14 @@ footer {
         height: 200px;
         margin-top: 75px;
     }
-  }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 30px;
+    }
+
+    .foot {
+        margin-top: -10px;
+    }
+}
