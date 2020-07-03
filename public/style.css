@@ -225,5 +225,6 @@ footer {
     .img {
         min-width: 200px;
         height: auto;
+        object-fit: contain;
     }
   }
