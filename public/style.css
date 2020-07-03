@@ -223,7 +223,7 @@ footer {
 
 @media only screen and (max-width: 650px) {
     .img {
-        width: auto;
-        height: 100% !important;
+        width: 10em;
+        height: 10em;
     }
   }
