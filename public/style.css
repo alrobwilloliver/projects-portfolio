@@ -225,5 +225,6 @@ footer {
     .img {
         width: auto;
         height: 200px;
+        margin-top: 75px;
     }
   }
