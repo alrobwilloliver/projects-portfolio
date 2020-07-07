@@ -43,6 +43,10 @@ p {
     color: #FFF;
 }
 
+a {
+    color: white;
+}
+
 li {
     display: inline-block;
     text-decoration: none;
