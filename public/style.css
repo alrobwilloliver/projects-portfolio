@@ -43,18 +43,16 @@ p {
     color: #FFF;
 }
 
-a {
-    color: white;
-}
-
 li {
     display: inline-block;
     text-decoration: none;
-    margin: 10px;
+    margin: 15px;
+    padding: 10px;
 }
 
 li > a {
     color: #000 !important;
+    padding: 5px;
 }
 
 ol {
@@ -80,9 +78,7 @@ footer {
 }
 
 .foot {
-    /* margin-top: 100px; */
     text-align: center;
-    /* display: inline-block; */
 }
 
 /* Reusable Components */
@@ -148,9 +144,9 @@ footer {
 
 /* -----------Navbar---------------- */
 
-/* .active {
-    color: 
-} */
+.active {
+    border-bottom: 2px solid #4B96D7;
+}
 
 
 /* utils */
