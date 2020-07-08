@@ -15,6 +15,10 @@ app.get('/projects', (req, res) => {
     res.sendFile("projects.html", { root: __dirname + '/public/views' })
 })
 
+app.get('/aboutme', (req, res) => {
+    res.sendFile("aboutme.html", { root: __dirname + '/public/views' })
+})
+
 app.listen(process.env.PORT || 8000, () => {
     console.log("Connected");
 })

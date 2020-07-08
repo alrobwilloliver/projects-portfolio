@@ -218,6 +218,31 @@ footer {
     margin: 50px;
 }
 
+.about-me-p {
+    color: black;
+    font-size: 70%;
+    width: 75%;
+}
+
+.about-me-img {
+    width: 50%;
+    border-radius: 0;
+    display: block;
+    margin: auto;
+}
+
+.about-me-img-small {
+    width: 40%;
+    border-radius: 0;
+    display: block;
+    margin: auto;
+}
+
+.about-me-caption {
+    color: rgb(54, 54, 54);
+    text-align: center;
+    margin: 10px;
+}
 /* responsive */
 
 @media only screen and (max-width: 600px) {
@@ -225,6 +250,10 @@ footer {
         width: auto;
         height: 200px;
         margin-top: 75px;
+    }
+
+    .about-me-img {
+        width: 75%;
     }
 }
 
